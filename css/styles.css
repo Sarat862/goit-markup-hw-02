@@ -1,0 +1,66 @@
+:root {
+    --primary-font-family: "Roboto", sans-serif;
+    --secondary-font-family: "Raleway", sans-serif;
+    --primary-color-text: #212121;
+    --secondary-color-text: #757575;
+    --accent-color: #2196F3;
+}
+
+body {
+    font-family: var(--primary-font-family); 
+    color: var(--primary-color-text);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+
+/* HEADER */
+
+/* Логотип сайта */
+.logo {
+font-family: var(--secondary-font-family);
+font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+}
+.part-logo {
+font-family: var(--secondary-font-family);
+font-weight: bold;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+}
+
+/* Навігація сайта */
+.nav-list-link {
+font-family: var(--primary-font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-color-text);
+}
+.nav-list-link:hover,
+.nav-list-link:focus {
+color: var(--accent-color);
+}
+
+/* Контакти */
+.contact-link {
+font-family: var(--primary-font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--secondary-color-text);    
+}
+.contact-link:hover,
+.contact-link:focus {
+color: var(--accent-color);
+}
