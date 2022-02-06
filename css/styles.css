@@ -3,12 +3,14 @@
     --secondary-font-family: "Raleway", sans-serif;
     --primary-color-text: #212121;
     --secondary-color-text: #757575;
+    --text-color-theme-dark: #ffffff;
     --accent-color: #2196F3;
+    --primary-background-color: #2F303A;
+    --secondary-background-color: #F5F4FA; 
 }
 
 body {
     font-family: var(--primary-font-family); 
-    color: var(--primary-color-text);
 }
 .link {
     text-decoration: none;
@@ -17,50 +19,154 @@ body {
     list-style: none;
 }
 
-/* HEADER */
+/* HEADER, ШАПКА СТОРІНКИ */
 
 /* Логотип сайта */
 .logo {
-font-family: var(--secondary-font-family);
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: #000000;
+    font-family: var(--secondary-font-family);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 .part-logo {
-font-family: var(--secondary-font-family);
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--accent-color);
+    font-family: var(--secondary-font-family);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
 }
 
 /* Навігація сайта */
 .nav-list-link {
-font-family: var(--primary-font-family);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--primary-color-text);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color-text);
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
 /* Контакти */
 .contact-link {
-font-family: var(--primary-font-family);
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color: var(--secondary-color-text);    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-text);    
 }
 .contact-link:hover,
 .contact-link:focus {
-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* MAIN, ГОЛОВНА ЧАСТИНА СТОРІНКИ */
+
+/* Героїк */
+.hero-section {
+    background-color: var(--primary-background-color);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-theme-dark);
+}
+.hero-btn {
+    font-family: var(--primary-font-family); 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-color-theme-dark);
+    background-color: var(--accent-color);
+}
+
+/* Особливості компанії */
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color-text);
+}
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+
+.caption-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-color-text);
+}
+/* Чим займається компанія */
+
+
+/* Команда компанії */
+.developer-company {
+    background-color: var(--secondary-background-color);
+}
+.developer-company-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-color-text);
+}
+.developer-company-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+
+/* FOOTER, ПІДВАЛ СТОРІНКИ */
+
+.footer {
+    background-color: var(--primary-background-color);
+}
+.part-logo-right {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--text-color-theme-dark)
+}
+.address-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-theme-dark) 
+}
+.footer-contact-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
