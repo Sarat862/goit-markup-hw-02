@@ -11,6 +11,7 @@
 
 body {
     font-family: var(--primary-font-family); 
+    color:var(--primary-color-text);
 }
 .link {
     text-decoration: none;
@@ -24,19 +25,20 @@ body {
 /* Логотип сайта */
 .logo {
     font-family: var(--secondary-font-family);
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
-}
-.part-logo {
-    font-family: var(--secondary-font-family);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+}
+.part-logo {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: #000000;
 }
 
 /* Навігація сайта */
@@ -50,6 +52,9 @@ body {
 .nav-list-link:hover,
 .nav-list-link:focus {
     color: var(--accent-color);
+}
+.current {
+   color: var(--accent-color); 
 }
 
 /* Контакти */
@@ -80,8 +85,11 @@ body {
     text-transform: uppercase;
     color: var(--text-color-theme-dark);
 }
-.hero-btn {
-    font-family: var(--primary-font-family); 
+.hero-btn { 
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;  
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -90,35 +98,34 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-color-theme-dark);
-    background-color: var(--accent-color);
+    cursor: pointer;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
 
 /* Особливості компанії */
 .features-title {
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-color-text);
 }
 .features-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color-text);
 }
 
+/* Чим займається компанія */
 .caption-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    color: var(--primary-color-text);
 }
-/* Чим займається компанія */
-
 
 /* Команда компанії */
 .developer-company {
@@ -130,10 +137,8 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-color-text);
 }
 .developer-company-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -146,7 +151,7 @@ body {
 .footer {
     background-color: var(--primary-background-color);
 }
-.part-logo-right {
+.part-logo-invert {
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
@@ -156,7 +161,6 @@ body {
 }
 .address-text {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -164,9 +168,56 @@ body {
 }
 .footer-contact-link {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+
+/* ======PAGE PORTFOLIO====== */
+
+/* MAIN ,ГОЛОВНА ЧАСТИНА СТОРІНКИ */
+
+/* Фільтр проектів */
+.project-item-btn {
+    background-color: var(--secondary-background-color);
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-color-text);
+    cursor: pointer;
+}
+.project-item-btn:hover,
+.project-item-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--text-color-theme-dark);
+}
+.current-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color-theme-dark);
+}
+/* Список проектів */
+.project-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-color-text);
+}
+.project-subtitle {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+
